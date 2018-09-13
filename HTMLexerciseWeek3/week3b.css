@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+#wrapper{
+    max-width:1000px;
+    margin: 0 auto;
+}
+
+p, li{
+    font-size: .875em;
+    line-height: 1.6;
+}
+
+.subhead{
+    font-size: 80%;
+}
+
+h1,h2{
+    font-family: serif;
+    border-bottom: 1px solid #a2a9b1;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+h1{
+    margin-bottom: .2em;
+}
+
+#infobox{
+    text-align: center;
+    width:250px;
+    border: solid 1px #a2a9b1;
+
+    float:right;
+    clear:right;
+    font-size:75%;
+}
+
+th{
+    text-align: left;
+}
+
+
+
+Im not even bothering to type cuz im gunna copy paste later
+
