@@ -1,9 +1,13 @@
 body{
-    font-family: 'Noto Serif JP', sans-serif;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1.5px;
+    line-height: 4vh;
+    font-size:3vh;
     margin:auto;
+    background-color:#ffcf3f;
 }
 
-img{
+#face{
     margin: auto;
     top:0;
     position: fixed;
@@ -13,9 +17,30 @@ img{
     min-width: 75vh;
 }
 
-section{
-    max-width:50vw;
-    margin: auto;
-    right:0;
+h1{
+    font-size: 6vh;
+    line-height: 6vh;
 }
 
+section{
+    max-width:50vw;
+    margin-left: 85vh;
+
+    color:white;
+}
+
+a:link{
+    color:white;
+    text-decoration: none;
+}
+
+a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#4b7700;
+    text-decoration: underline;
+    font-weight: 900;
+}
