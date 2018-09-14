@@ -4,29 +4,29 @@ body{
     line-height: 4vh;
     font-size:3vh;
     margin:auto;
-    background-color:#ffcf3f;
+    background-color:#ffc700;
 }
 
-#face{
+img{
     margin: auto;
     top:0;
-    position: fixed;
-    max-height: 100vh;
-    max-width: 50vw;
-    min-height: 100vh;
-    min-width: 75vh;
-}
-
-h1{
-    font-size: 6vh;
-    line-height: 6vh;
+    width: 40vw;
+    float:right;
+    margin-right: 45px;
 }
 
 section{
-    max-width:50vw;
-    margin-left: 85vh;
+    color: white;
+    margin-left: 40px;
+}
 
-    color:white;
+h2{
+    font-size: 3vh;
+}
+
+a{
+    padding-left: 40px;
+    font-size: 2.5vh;
 }
 
 a:link{
@@ -40,7 +40,27 @@ a:visited{
 }
 
 a:hover{
-    color:#4b7700;
+    color:#b70098;
     text-decoration: underline;
     font-weight: 900;
+}
+
+@media screen and (min-width: 1025px){
+    img{
+        max-height: 100vh;
+        max-width: 50vw;
+        min-height: 100vh;
+        min-width: 75vh;
+        position: fixed;
+    }
+
+    h1{
+        font-size: 6vh;
+        line-height: 6vh;
+    }
+
+    section{
+        max-width:50vw;
+        margin-left: 80vh;
+    }
 }
