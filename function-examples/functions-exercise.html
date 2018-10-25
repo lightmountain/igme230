@@ -31,8 +31,20 @@
 
     <script>
         "use strict";
-        let colors = []; // add some colors
-        let foods = []; // add some foods
+        let colors = [black, orange, yellow, red, blue]; // add some colors
+        let foods = [cantaloupe, pizza, cheese, croissant]; // add some foods
+
+        for(let i=0; i<colors.length-1; i++){
+            let list = document.createElement("li");
+            list.innerHTML = colors[i];
+            document.getElementById("colorsList").appendChild(list);
+        }
+
+        for(let i=0; i<foods.length-1; i++){
+            let list = document.createElement('li');
+
+            list.appendChild(document.getElementById("foodsList"));
+        }
     </script>
 
 </body>
