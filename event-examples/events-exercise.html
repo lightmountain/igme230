@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<title>Events Exercise</title>
-	<style>
-           @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+    <meta charset="utf-8" />
+    <title>Events Exercise</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
 
 		html {
 			font-family:Lato, sans-serif;
@@ -29,19 +30,57 @@
 		}
 	</style>
 </head>
+
 <body>
 
-<div id="colorform">
-	<legend>Choose your favorite color!</legend>
-	<p><input type="radio" name="colorGroup" value="red" /> Red</p>
-	<p><input type="radio" name="colorGroup" value="green" /> Green</p>
-	<p><input type="radio" name="colorGroup" value="blue" /> Blue</p>
-	<p><button id="colorButton" type="button">Submit</button></p>
-	<p id="info"></p>
-</div>
+    <div id="colorform">
+        <legend>Choose your favorite color!</legend>
+        <p><input type="radio" name="colorGroup" value="red" /> Red</p>
+        <p><input type="radio" name="colorGroup" value="green" /> Green</p>
+        <p><input type="radio" name="colorGroup" value="blue" /> Blue</p>
+        <p><button id="colorButton" type="button">Submit</button></p>
+        <p id="info"></p>
+    </div>
 
-<script>
-/* Write your code here! */
-</script>
+    <script>
+        let radioOptions = document.querySelectorAll("input"); //this is the array of the buttons
+        let radioRed = radioOptions[0].value; //getting the value of the first button
+        let radioGreen = radioOptions[1].value; //getting the value of the second button
+        let radioBlue = radioOptions[2].value; //getting the value of the third button
+        let radioSelected; //empty value to be filled with color for the submit button
+
+        //function called when a button is selected - function displays text in box
+        function radioSelect(color) {
+            let info = document.getElementById("info");
+            info.innerHTML = "You have selected the color " + color;
+        }
+
+        //these are all the functions that call radioSelect and determine which radio
+        //button is clicked and what color to use
+        radioOptions[0].onclick = function() {
+            radioSelect(radioRed);
+            radioSelected = radioRed; //filling the empty variable with selected color
+        }
+
+        radioOptions[1].onclick = function() {
+            radioSelect(radioGreen);
+            radioSelected = radioGreen; //filling the empty variable with selected color
+        }
+
+        radioOptions[2].onclick = function() {
+            radioSelect(radioBlue);
+            radioSelected = radioBlue; //filling the empty variable with selected color
+        }
+
+        //function that is called once the submit button is clicked and changes both the bottom
+        //text and the color of the title
+        document.querySelector("button").onclick = function() {
+                let info = document.getElementById("info");
+                info.innerHTML = "Your FINAL CHOICE is " + radioSelected;
+                let legend = document.querySelector("legend");
+                legend.style.color = radioSelected; //changes color to the selected color
+        }
+    </script>
 </body>
+
 </html>
