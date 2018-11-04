@@ -1,0 +1,135 @@
+html, body {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+.border{
+    position:fixed;
+    align-content: center;
+    background-color:#ffbb00;
+    top:8%;
+    left:13%;
+    bottom: 8%;
+    right:13%;
+    z-index: -10 !important;
+}
+
+nav{
+    position: fixed;
+    font-size:14px;
+    font-weight: bold;
+    padding-top: 3vh;
+    margin-left: 17%;
+}
+
+nav a{
+    text-decoration: none;
+    color:darkorange;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a: visited{
+    color:darkorange;
+    text-decoration: none;
+}
+
+nav a:focus, a:hover{
+    color:mediumvioletred;
+}
+
+footer {
+    color: lightpink;
+    position: fixed;
+    font-size: 10px;
+    width: 100%;
+    bottom: 0px;
+    letter-spacing: 0px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.left {
+    float: left;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+}
+
+.right {
+    float: right;
+    margin-right: 5vw;
+    margin-bottom: 1vh;
+}
+
+@media screen and (min-width:500px){
+    footer{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .right {
+        margin-right: 15vw;
+        margin-bottom: 2vh;
+    }
+
+    .left {
+        margin-left: 15vw;
+        margin-bottom: 2vh;
+    }
+}
+
+
+/* These queries are for just the menu */
+@media screen and (min-width:340px){
+    nav{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width:430px){
+    nav{
+        margin-left: 25%;
+    }
+}
+
+@media screen and (min-width:480px){
+    nav{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width:600px){
+    nav{
+        margin-left: 35%;
+    }
+}
+
+@media screen and (min-width:850px){
+    nav{
+        margin-left: 40%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    nav{
+        margin-left: 42%;
+    }
+}
+
+@media screen and (min-width:1500px){
+    nav{
+        margin-left: 45%;
+    }
+}
