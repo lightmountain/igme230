@@ -48,6 +48,10 @@ nav a:focus, a:hover{
     color:mediumvioletred;
 }
 
+.grid{
+    display: flex;
+}
+
 footer {
     color: lightpink;
     position: fixed;

@@ -108,6 +108,32 @@ p{
     margin-top: 10vh;
 }
 
+footer {
+    color: lightpink;
+    position: fixed;
+    font-size: 10px;
+    width: 100%;
+    bottom: 0px;
+    letter-spacing: 0px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.left {
+    float: left;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+}
+
+.right {
+    float: right;
+    margin-right: 5vw;
+    margin-bottom: 1vh;
+}
+
+
 @media screen and (min-width:500px){
     footer{
         font-size: 12px;
