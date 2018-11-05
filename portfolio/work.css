@@ -1,54 +1,59 @@
+/*helps to line things up*/
 html, body {
     max-width: 100%;
     width: 100%;
     overflow-x: hidden !important;
 }
 
-body{
+/*this is actually the border technically*/
+body {
     margin: 0;
     padding: 0;
-    background-color:white;
-    color:white;
+    background-color: white;
+    color: white;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
 }
 
-.border{
-    position:fixed;
+/*this is the yellow that creates an illusion of a border*/
+.border {
+    position: fixed;
     align-content: center;
-    background-color:#ffbb00;
-    top:8%;
-    left:13%;
+    background-color: #ffbb00;
+    top: 8%;
+    left: 13%;
     bottom: 8%;
-    right:13%;
-    z-index: -10 !important;
+    right: 13%;
+    z-index: -10 !important; /*makes sure it is behind everything*/
 }
 
-nav{
+/*top nav*/
+nav {
     position: fixed;
-    font-size:14px;
+    font-size: 14px;
     font-weight: bold;
     padding-top: 3vh;
     margin-left: 17%;
-    z-index: 1;
+    z-index: 1; /*brings menu forward*/
 }
 
-nav a{
+nav a {
     text-decoration: none;
-    color:darkorange;
+    color: darkorange;
     text-align: center;
     padding: 5px;
 }
 
-nav a: visited{
-    color:darkorange;
+nav a: visited {
+    color: darkorange;
     text-decoration: none;
 }
 
-nav a:focus, a:hover{
-    color:mediumvioletred;
+nav a:focus, a:hover {
+    color: mediumvioletred;
 }
 
+/*these white divs are so that when you scroll, you don't see the images past the border. I needed these due to the face that I made the border using a square on top of a background instead of actually creating a boarder.*/
 .white1{
     position: fixed;
     width:100%;
@@ -64,12 +69,14 @@ nav a:focus, a:hover{
     background-color:white;
 }
 
+/*sizing the images*/
 .mainImgs{
     width:auto;
     height:auto;
     max-width: 20vw;
 }
 
+/*positions the projects in border and makes it flex wrap*/
 .grid{
     display: flex;
     flex-flow: wrap;
@@ -79,19 +86,14 @@ nav a:focus, a:hover{
     margin-bottom: 10vh;
 }
 
+/*helps to size images*/
 .links{
     max-width: 20vw;
     margin: 0 auto;
     margin-bottom: 5vh;
 }
 
-
-.border2{
-    height:100%;
-    width:100%;
-
-}
-
+/*this part is the same in every page, like the nav*/
 footer {
     color: lightpink;
     position: fixed;
@@ -99,7 +101,7 @@ footer {
     width: 100%;
     bottom: 0px;
     letter-spacing: 0px;
-    z-index: 1;
+    z-index: 1; /*brings text forward*/
 }
 
 footer p {
@@ -144,7 +146,7 @@ to create 6 new pages just for a few lines of code.*/
         font-size: 12px;
     }
 
-
+/*queries for the footer*/
 @media screen and (min-width:500px){
     footer{
         font-size: 12px;

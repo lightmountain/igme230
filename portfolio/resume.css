@@ -1,52 +1,57 @@
+/*helps to line things up*/
 html, body {
     max-width: 100%;
     width: 100%;
     overflow-x: hidden !important;
 }
 
-body{
+/*this is actually the border technically*/
+body {
     margin: 0;
     padding: 0;
-    background-color:white;
-    color:white;
+    background-color: white;
+    color: white;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
 }
 
-.border{
-    position:fixed;
+/*this is the yellow that creates an illusion of a border*/
+.border {
+    position: fixed;
     align-content: center;
-    background-color:#ffbb00;
-    top:8%;
-    left:13%;
+    background-color: #ffbb00;
+    top: 8%;
+    left: 13%;
     bottom: 8%;
-    right:13%;
-    z-index: -10 !important;
+    right: 13%;
+    z-index: -10 !important; /*makes sure it is behind everything*/
 }
 
-nav{
+/*top nav*/
+nav {
     position: fixed;
-    font-size:14px;
+    font-size: 14px;
     font-weight: bold;
     padding-top: 3vh;
     margin-left: 17%;
 }
 
-nav a{
+nav a {
     text-decoration: none;
-    color:darkorange;
+    color: darkorange;
     text-align: center;
     padding: 5px;
 }
 
-nav a: visited{
-    color:darkorange;
+nav a: visited {
+    color: darkorange;
     text-decoration: none;
 }
 
-nav a:focus, a:hover{
-    color:mediumvioletred;
+nav a:focus, a:hover {
+    color: mediumvioletred;
 }
+
 
 h2{
     text-align: center;
@@ -54,6 +59,8 @@ h2{
     padding-top:0;
     margin-top:0;
 }
+
+/*I realize I skipped 3, but that is because I had a 3 but then deleted it. also I feel like the below part is kinda self explanatory. It is just styling all the different type for the resume*/
 
 h4{
     font-weight: 500;
@@ -108,12 +115,14 @@ p{
     margin-top: 10vh;
 }
 
+/*styles the print button*/
 .printPage{
     color:darkmagenta;
     font-size: 20px;
     margin-top: 10vh;
 }
 
+/*this part is the same in every page, like the nav*/
 footer {
     color: lightpink;
     position: fixed;

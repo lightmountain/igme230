@@ -1,10 +1,11 @@
-html,
-body {
+/*helps to line things up*/
+html, body {
     max-width: 100%;
     width: 100%;
     overflow-x: hidden !important;
 }
 
+/*this is actually the border technically*/
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
     letter-spacing: 2px;
 }
 
+/*this is the yellow that creates an illusion of a border*/
 .border {
     position: fixed;
     align-content: center;
@@ -22,9 +24,10 @@ body {
     left: 13%;
     bottom: 8%;
     right: 13%;
-    z-index: -10 !important;
+    z-index: -10 !important; /*makes sure it is behind everything*/
 }
 
+/*top nav*/
 nav {
     position: fixed;
     font-size: 14px;
@@ -45,17 +48,18 @@ nav a: visited {
     text-decoration: none;
 }
 
-nav a:focus,
-a:hover {
+nav a:focus, a:hover {
     color: mediumvioletred;
 }
 
+/*just the main title*/
 h1 {
     text-align: center;
     font-size: 6vw;
     padding-top: 13vh;
 }
 
+/*my name*/
 h2 {
     text-align: center;
     font-size: 15px;
@@ -64,6 +68,7 @@ h2 {
     margin: 0;
 }
 
+/*picture*/
 .face {
     display: block;
     margin-left: auto;
@@ -73,6 +78,7 @@ h2 {
     justify-content: center;
 }
 
+/*this part is the same in every page, like the nav*/
 footer {
     color: lightpink;
     position: fixed;
@@ -83,7 +89,7 @@ footer {
 }
 
 footer p {
-    margin: 0;
+    margin: 0; /*to get rid of margins and reset them below*/
 }
 
 .left {
@@ -98,22 +104,7 @@ footer p {
     margin-bottom: 1vh;
 }
 
-@media screen and (min-width: 1000px) {
-    h1 {
-        font-size: 60px;
-    }
-}
-
-@media screen and (max-height: 750px) and (min-width: 450px) {
-    h1 {
-        font-size: 5vh;
-    }
-
-    .face {
-        width: 40vh;
-    }
-}
-
+/*makes footer responsive*/
 @media screen and (min-width:500px){
     footer{
         font-size: 12px;
@@ -131,8 +122,25 @@ footer p {
     }
 }
 
+/*media queries to help the face and title be responsive*/
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 60px;
+    }
+}
 
-/* These queries are for just the menu */
+@media screen and (max-height: 750px) and (min-width: 450px) {
+    h1 {
+        font-size: 5vh;
+    }
+
+    .face {
+        width: 40vh;
+    }
+}
+
+
+/* These queries are for just the menu so it is responsive (I couldn't get the margin auto thing to work :/ ) */
 @media screen and (min-width:340px) {
     nav {
         margin-left: 20%;
