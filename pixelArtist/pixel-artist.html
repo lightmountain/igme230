@@ -135,9 +135,14 @@
             });
         });
 
-        $(document).mouseup(function () {
-    $(".cell").unbind("mouseover");
-});
+        $(document).mouseup(function() {
+            $(".cell").unbind("mouseover");
+        });
+
+        //this doesn't work
+        $("#reset").mousedown(function(){
+            document.querySelectorAll(".cell").css("background-color", "#ccc");
+        })
     </script>
 </body>
 
