@@ -35,80 +35,89 @@ aside {
 Your Formatting
 ***************/
 
-#mygrid{
+#mygrid {
     display: grid;
-    width:100%;
+    width: 100%;
     grid-template-columns: 1fr;
 }
 
-header{
-    height:75px;
-    background-color:lightpink;
+header {
+    height: 75px;
+    background-color: lightpink;
 }
 
-nav{
-    height:50px; /*you originally had 30 here but the color wouldn't fit*/
+nav {
+    height: 50px;
+    background-color: lavenderblush;
+    /*you originally had 30 here but the color wouldn't fit*/
 }
 
-article{
-    height:auto;
+article {
+    height: auto;
+    background-color: lightcyan;
 }
 
-aside{
-    height:auto;
+aside {
+    height: auto;
+    background-color: lightblue;
 }
 
-footer{
-    height:50px;
-    background-color:lightpink;
+footer {
+    height: 50px;
+    background-color: lightpink;
 }
 
 
 
-@media screen and (min-width:550px){
-    header{
+@media screen and (min-width:550px) {
+    header {
         grid-area: header;
         display: flex;
-    }
-
-
-
-    nav{
-        grid-area:nav;
-        background-color:lavenderblush;
-        display: flex;
-    }
-
-    .top{
-       display: flex;
         justify-content: center;
-        align-content: flex-start;
     }
 
-    article{
-        grid-area:article;
-        background-color:lightcyan;
-    }
-
-    aside{
-        grid-area:aside;
-        background-color:lightblue;
-    }
-
-    footer{
-        grid-area:footer;
+    nav {
+        grid-area: nav;
         display: flex;
-
+        justify-content: space-around;
     }
 
-    #mygrid{
-        width:90%;
-        max-width:1000px;
+    .top {
+        width:6rem;
+        background-color: #ccc;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .list{
+        text-decoration: none;
+        background-color:#ddd;
+        padding-left: .25rem;
+    }
+
+    article {
+        grid-area: article;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+    }
+
+    #mygrid {
+        width: 90%;
+        max-width: 1000px;
         min-height: 100vh;
-        margin:auto;
-        grid-template-rows: 75px 50px auto 30px; /*was originally 75 30 auto 30, but nav needed more space*/
+        margin: auto;
+        grid-template-rows: 75px 50px auto 30px;
+        /*was originally 75 30 auto 30, but nav needed more space*/
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "header header" ". nav" "article aside" "footer footer";
+        grid-template-areas: "header header"". nav""article aside""footer footer";
     }
 
 }
