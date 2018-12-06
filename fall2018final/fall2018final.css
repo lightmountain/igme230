@@ -34,3 +34,43 @@ aside {
 /**************
 Your Formatting
 ***************/
+
+#mygrid{
+    width:100%;
+    grid-template-columns: 1fr;
+}
+
+header{
+    height:75px;
+    display: flex;
+}
+
+nav{
+    height:30px;
+    display: flex;
+}
+
+article{
+    height:auto;
+}
+
+aside{
+    height:auto;
+}
+
+footer{
+    height:30px;
+    display: flex;
+}
+
+@media screen and (min-width:450px){
+    #mygrid{
+        width:90%;
+        max-width:1000px;
+        min-height: 100vh;
+        margin:auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
