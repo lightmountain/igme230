@@ -36,18 +36,17 @@ Your Formatting
 ***************/
 
 #mygrid{
+    display: grid;
     width:100%;
     grid-template-columns: 1fr;
 }
 
 header{
     height:75px;
-    display: flex;
 }
 
 nav{
     height:30px;
-    display: flex;
 }
 
 article{
@@ -60,17 +59,38 @@ aside{
 
 footer{
     height:30px;
-    display: flex;
 }
 
-@media screen and (min-width:450px){
+@media screen and (min-width:550px){
+    header{
+        grid-area: header;
+    }
+
+    nav{
+        grid-area:nav;
+    }
+
+    article{
+        grid-area:article;
+    }
+
+    aside{
+        grid-area:aside;
+    }
+
+    footer{
+        grid-area:footer;
+    }
+
     #mygrid{
         width:90%;
         max-width:1000px;
         min-height: 100vh;
         margin:auto;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 75px 30px auto 30px;
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header" "nav nav" "article aside" "footer footer";
 
     }
+
 }
