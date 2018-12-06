@@ -43,10 +43,11 @@ Your Formatting
 
 header{
     height:75px;
+    background-color:lightpink;
 }
 
 nav{
-    height:30px;
+    height:50px; /*you originally had 30 here but the color wouldn't fit*/
 }
 
 article{
@@ -58,28 +59,46 @@ aside{
 }
 
 footer{
-    height:30px;
+    height:50px;
+    background-color:lightpink;
 }
+
+
 
 @media screen and (min-width:550px){
     header{
         grid-area: header;
+        display: flex;
     }
+
+
 
     nav{
         grid-area:nav;
+        background-color:lavenderblush;
+        display: flex;
+    }
+
+    .top{
+       display: flex;
+        justify-content: center;
+        align-content: flex-start;
     }
 
     article{
         grid-area:article;
+        background-color:lightcyan;
     }
 
     aside{
         grid-area:aside;
+        background-color:lightblue;
     }
 
     footer{
         grid-area:footer;
+        display: flex;
+
     }
 
     #mygrid{
@@ -87,10 +106,9 @@ footer{
         max-width:1000px;
         min-height: 100vh;
         margin:auto;
-        grid-template-rows: 75px 30px auto 30px;
+        grid-template-rows: 75px 50px auto 30px; /*was originally 75 30 auto 30, but nav needed more space*/
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "header header" "nav nav" "article aside" "footer footer";
-
+        grid-template-areas: "header header" ". nav" "article aside" "footer footer";
     }
 
 }
