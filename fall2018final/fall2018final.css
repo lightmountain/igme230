@@ -65,6 +65,7 @@ aside {
 footer {
     height: 50px;
     background-color: lightpink;
+    z-index: 1;
 }
 
 
@@ -80,6 +81,7 @@ footer {
         grid-area: nav;
         display: flex;
         justify-content: space-around;
+        z-index: 1;
     }
 
     .top {
@@ -90,7 +92,9 @@ footer {
     }
 
     .list{
-        text-decoration: none;
+        margin: none;
+        padding: none;
+        list-style-type: none;
         background-color:#ddd;
         padding-left: .25rem;
     }
@@ -107,6 +111,7 @@ footer {
         grid-area: footer;
         display: flex;
         justify-content: center;
+        z-index: 1;
     }
 
     #mygrid {
