@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="page1.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,13 +21,29 @@
         </div>
     </nav>
 
-    <div class="directions"><p>Click on the dog!</p></div>
-
-    <div id="flexContainer">
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-03.png"></div>
+    <div class="directions">
+        <p>Click on the dog!</p>
     </div>
 
-    <script src="page1.js"></script>
+
+    <div id="flexContainer">
+        <div class="cell">
+            <img src="/finalProject/animals/dogMouth.svg" class="svg">
+            <img src="/finalProject/animals/animalsWebDesign-03.png" class="dog">
+        </div>
+    </div>
+
+<!--    I put the script inside the html because for some reason, my separate js page wasn't recognizing my jquery-->
+    <script>
+        var audio = new Audio('/finalProject/animals/dogBark.wav');
+        $(".dog").click(function() {
+            $(".svg").css("visibility", "visible");
+            audio.play();
+            setTimeout(function() {
+                $(".svg").css("visibility", "hidden")
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>

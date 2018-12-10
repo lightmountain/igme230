@@ -31,3 +31,16 @@ p{
     display: flex;
     justify-content: center;
 }
+
+.dog{
+    position:relative;
+    left:-30px;
+}
+
+.svg{
+    position:relative;
+    left:170px;
+    top:-15px;
+    z-index: 1;
+    visibility: hidden;
+}

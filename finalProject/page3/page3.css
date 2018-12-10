@@ -31,5 +31,170 @@ p{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
 
+img{
+    position:relative;
+}
+
+.dolphinSvg{
+    left:45px;
+    top:-70px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.dolphinImg{
+    left:-140px;
+}
+
+.lionSvg{
+    left:108px;
+    top:-95px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.lionImg{
+    left:-44px;
+}
+
+.monkeySvg{
+    left:80px;
+    top:-10px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.monkeyImg{
+    left:-75px;
+}
+
+.catSvg{
+    left:97px;
+    top:-70px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.catImg{
+    left:-78px;
+}
+
+.roosterSvg{
+    left:65px;
+    top:-80px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.roosterImg{
+    left:-50px;
+}
+
+.pigSvg{
+    left:170px;
+    top:-28px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.pigImg{
+    left:-50px;
+}
+
+.bearSvg{
+    left:120px;
+    top:-35px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.bearImg{
+    left:-44px;
+}
+
+.dogSvg{
+    left:170px;
+    top:-15px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.dogImg{
+    left:-30px;
+}
+
+.horseSvg{
+    left:45px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.horseImg{
+    left:-50px;
+}
+
+.duckSvg{
+    left:58px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.duckImg{
+    left:-77px;
+}
+
+.owlSvg{
+    left:123px;
+    top:-40px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.owlImg{
+    left:-27px;
+}
+
+.snakeSvg{
+    left:100px;
+    top:-135px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.snakeImg{
+    left:-7px;
+}
+
+.elephantSvg{
+    left:262px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.elephantImg{
+    left:-23px;
+}
+
+.cowSvg{
+    left:195px;
+    top:-35px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.cowImg{
+    left:-7px;
+}
+
+.sheepSvg{
+    left:127px;
+    top:-50px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.sheepImg{
+    left:-36px;
 }

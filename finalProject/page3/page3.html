@@ -7,17 +7,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="page3.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 
     <nav>
-        <ul>
+        <div>
             <a href="/finalProject/page1/page1.html">Page 1</a>
             <a href="/finalProject/page2/page2.html">Page 2</a>
             <a href="/finalProject/page3/page3.html">Page 3</a>
             <a href="/finalProject/documentation.html">Documentation</a>
-        </ul>
+        </div>
     </nav>
 
     <div class="directions">
@@ -25,32 +27,203 @@
     </div>
 
     <div class="flexContainer">
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-01.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-02.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-03.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-04.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-05.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-06.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-07.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-08.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-09.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-10.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-11.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-12.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-13.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-14.png"></div>
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-15.png"></div>
+        <div class="cell">
+            <img src="/finalProject/animals/dolphinMouth.svg" class="dolphinSvg">
+            <img src="/finalProject/animals/animalsWebDesign-01.png" class="dolphinImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/lionMouth.svg" class="lionSvg">
+            <img src="/finalProject/animals/animalsWebDesign-02.png" class="lionImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/dogMouth.svg" class="dogSvg">
+            <img src="/finalProject/animals/animalsWebDesign-03.png" class="dogImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/horseMouth.svg" class="horseSvg">
+            <img src="/finalProject/animals/animalsWebDesign-04.png" class="horseImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/roosterMouth.svg" class="roosterSvg">
+            <img src="/finalProject/animals/animalsWebDesign-05.png" class="roosterImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/catMouth.svg" class="catSvg">
+            <img src="/finalProject/animals/animalsWebDesign-06.png" class="catImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/duckMouth.svg" class="duckSvg">
+            <img src="/finalProject/animals/animalsWebDesign-07.png" class="duckImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/monkeyMouth.svg" class="monkeySvg">
+            <img src="/finalProject/animals/animalsWebDesign-08.png" class="monkeyImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/owlMouth.svg" class="owlSvg">
+            <img src="/finalProject/animals/animalsWebDesign-09.png" class="owlImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/bearMouth.svg" class="bearSvg">
+            <img src="/finalProject/animals/animalsWebDesign-10.png" class="bearImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/pigMouth.svg" class="pigSvg">
+            <img src="/finalProject/animals/animalsWebDesign-11.png" class="pigImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/snakeMouth.svg" class="snakeSvg">
+            <img src="/finalProject/animals/animalsWebDesign-12.png" class="snakeImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/elephantMouth.svg" class="elephantSvg">
+            <img src="/finalProject/animals/animalsWebDesign-13.png" class="elephantImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/cowMouth.svg" class="cowSvg">
+            <img src="/finalProject/animals/animalsWebDesign-14.png" class="cowImg">
+        </div>
+        <div class="cell">
+            <img src="/finalProject/animals/sheepMouth.svg" class="sheepSvg">
+            <img src="/finalProject/animals/animalsWebDesign-15.png" class="sheepImg">
+        </div>
     </div>
 
-    <div class="flexContainer">
-        <div class="cell"><img src="/finalProject/animals/animalsWebDesign-16.png"></div>
-    </div>
+    <script>
+        let dogAudio = new Audio('/finalProject/animals/dogBark.wav');
+        $(".dogImg").click(function() {
+            $(".dogSvg").css("visibility", "visible");
+            dogAudio.play();
+            setTimeout(function() {
+                $(".dogSvg").css("visibility", "hidden")
+            }, 500);
+        });
 
+        let dolphinAudio = new Audio('/finalProject/animals/dolphin.mp3');
+        $(".dolphinImg").click(function() {
+            $(".dolphinSvg").css("visibility", "visible");
+            dolphinAudio.play();
+            setTimeout(function() {
+                $(".dolphinSvg").css("visibility", "hidden")
+            }, 2750);
+        });
 
-    <div class="directions">
-        <p>Drag and drop some food to feed everyone!</p>
-    </div>
+        let lionAudio = new Audio('/finalProject/animals/lion.wav');
+        $(".lionImg").click(function() {
+            $(".lionSvg").css("visibility", "visible");
+            lionAudio.play();
+            setTimeout(function() {
+                $(".lionSvg").css("visibility", "hidden")
+            }, 2750);
+        });
 
-    <script src="page3.js"></script>
+        let horseAudio = new Audio('/finalProject/animals/horse.wav');
+        $(".horseImg").click(function() {
+            $(".horseSvg").css("visibility", "visible");
+            horseAudio.play();
+            setTimeout(function() {
+                $(".horseSvg").css("visibility", "hidden")
+            }, 2750);
+        });
+
+        let roosterAudio = new Audio('/finalProject/animals/rooster.wav');
+        $(".roosterImg").click(function() {
+            $(".roosterSvg").css("visibility", "visible");
+            roosterAudio.play();
+            setTimeout(function() {
+                $(".roosterSvg").css("visibility", "hidden")
+            }, 2250);
+        });
+
+        let catAudio = new Audio('/finalProject/animals/catMeow.wav');
+        $(".catImg").click(function() {
+            $(".catSvg").css("visibility", "visible");
+            catAudio.play();
+            setTimeout(function() {
+                $(".catSvg").css("visibility", "hidden")
+            }, 1000);
+        });
+
+        let duckAudio = new Audio('/finalProject/animals/duckQuack.wav');
+        $(".duckImg").click(function() {
+            $(".duckSvg").css("visibility", "visible");
+            duckAudio.play();
+            setTimeout(function() {
+                $(".duckSvg").css("visibility", "hidden")
+            }, 1500);
+        });
+
+        let monkeyAudio = new Audio('/finalProject/animals/monkey.wav');
+        $(".monkeyImg").click(function() {
+            $(".monkeySvg").css("visibility", "visible");
+            monkeyAudio.play();
+            setTimeout(function() {
+                $(".monkeySvg").css("visibility", "hidden")
+            }, 1000);
+        });
+
+        let owlAudio = new Audio('/finalProject/animals/owlHoot.mp3');
+        $(".owlImg").click(function() {
+            $(".owlSvg").css("visibility", "visible");
+            owlAudio.play();
+            setTimeout(function() {
+                $(".owlSvg").css("visibility", "hidden")
+            }, 1000);
+        });
+
+        let bearAudio = new Audio('/finalProject/animals/bearRoar.mp3');
+        $(".bearImg").click(function() {
+            $(".bearSvg").css("visibility", "visible");
+            bearAudio.play();
+            setTimeout(function() {
+                $(".bearSvg").css("visibility", "hidden")
+            }, 1250);
+        });
+
+        let pigAudio = new Audio('/finalProject/animals/pigOink.wav');
+        $(".pigImg").click(function() {
+            $(".pigSvg").css("visibility", "visible");
+            pigAudio.play();
+            setTimeout(function() {
+                $(".pigSvg").css("visibility", "hidden")
+            }, 900);
+        });
+
+        let snakeAudio = new Audio('/finalProject/animals/snakeHiss.wav');
+        $(".snakeImg").click(function() {
+            $(".snakeSvg").css("visibility", "visible");
+            snakeAudio.play();
+            setTimeout(function() {
+                $(".snakeSvg").css("visibility", "hidden")
+            }, 3500);
+        });
+
+        let elephantAudio = new Audio('/finalProject/animals/elephant.wav');
+        $(".elephantImg").click(function() {
+            $(".elephantSvg").css("visibility", "visible");
+            elephantAudio.play();
+            setTimeout(function() {
+                $(".elephantSvg").css("visibility", "hidden")
+            }, 1000);
+        });
+
+        let cowAudio = new Audio('/finalProject/animals/cowMoo.mp3');
+        $(".cowImg").click(function() {
+            $(".cowSvg").css("visibility", "visible");
+            cowAudio.play();
+            setTimeout(function() {
+                $(".cowSvg").css("visibility", "hidden")
+            }, 2750);
+        });
+
+        let sheepAudio = new Audio('/finalProject/animals/sheep.flac');
+        $(".sheepImg").click(function() {
+            $(".sheepSvg").css("visibility", "visible");
+            sheepAudio.play();
+            setTimeout(function() {
+                $(".sheepSvg").css("visibility", "hidden")
+            }, 1200);
+        });
+    </script>
 </body>
 </html>

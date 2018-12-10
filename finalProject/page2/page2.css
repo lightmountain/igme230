@@ -32,3 +32,62 @@ p{
     justify-content: center;
     flex-wrap: wrap;
 }
+
+img{
+    position:relative;
+}
+
+.monkeySvg{
+    left:80px;
+    top:-10px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.monkeyImg{
+    left:-75px;
+}
+
+.catSvg{
+    left:97px;
+    top:-70px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.catImg{
+    left:-78px;
+}
+
+.roosterSvg{
+    left:65px;
+    top:-80px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.roosterImg{
+    left:-50px;
+}
+
+.pigSvg{
+    left:170px;
+    top:-28px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.pigImg{
+    left:-50px;
+}
+
+.bearSvg{
+    left:120px;
+    top:-35px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.bearImg{
+    left:-44px;
+}
