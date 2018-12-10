@@ -21,6 +21,8 @@
         </div>
     </nav>
 
+    <h1>Please use a device with a viewport width of more than 450px. Thank you.</h1>
+
     <div class="directions">
         <p>Click on the dog!</p>
     </div>
@@ -33,17 +35,8 @@
         </div>
     </div>
 
-<!--    I put the script inside the html because for some reason, my separate js page wasn't recognizing my jquery-->
-    <script>
-        var audio = new Audio('/finalProject/animals/dogBark.wav');
-        $(".dog").click(function() {
-            $(".svg").css("visibility", "visible");
-            audio.play();
-            setTimeout(function() {
-                $(".svg").css("visibility", "hidden")
-            }, 500);
-        });
-    </script>
+    <script src="page1.js"></script>
+
 </body>
 
 </html>

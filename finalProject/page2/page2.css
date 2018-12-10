@@ -1,3 +1,4 @@
+/*the same as page 1 except for images and svgs separated and positioned individually*/
 body, html{
     background-color:black;
 }
@@ -22,6 +23,13 @@ p{
     font-size: 30px;
 }
 
+h1{
+    color:white;
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 0px;
+    visibility: hidden;
+}
+
 .directions{
     display: flex;
     justify-content: center;
@@ -37,6 +45,9 @@ img{
     position:relative;
 }
 
+
+
+
 .monkeySvg{
     left:80px;
     top:-10px;
@@ -47,6 +58,9 @@ img{
 .monkeyImg{
     left:-75px;
 }
+
+
+
 
 .catSvg{
     left:97px;
@@ -59,6 +73,9 @@ img{
     left:-78px;
 }
 
+
+
+
 .roosterSvg{
     left:65px;
     top:-80px;
@@ -69,6 +86,9 @@ img{
 .roosterImg{
     left:-50px;
 }
+
+
+
 
 .pigSvg{
     left:170px;
@@ -81,6 +101,9 @@ img{
     left:-50px;
 }
 
+
+
+
 .bearSvg{
     left:120px;
     top:-35px;
@@ -90,4 +113,20 @@ img{
 
 .bearImg{
     left:-44px;
+}
+
+
+@media screen and (max-width:450px){
+    img{
+        visibility:hidden;
+    }
+
+    p{
+        visibility: hidden;
+    }
+
+    h1{
+        visibility: visible;
+        font-size: 30px;
+    }
 }
